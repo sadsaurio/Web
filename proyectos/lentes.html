@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentes</title>
+    <link rel="stylesheet" href="casos.css">
+    <link rel="stylesheet" href="../font.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+
+            <a href="../index.html"> <-- </a>
+            <p id="logof"> <img id="logo" src="../imagenes/logo.jpg"width="250px" alt=""> </p>
+             
+        </div>
+        <ul class="nav-links">
+          
+            <div class="overlay">
+                
+                <div class="overlay-content">
+                   
+                 
+                    <p class="titulo">Objetivo: </p><p>
+                        Dotar a los alumnos del plantel cecytea CD. Satelite Morelos ,que necesitan un apoyo para lentes,  para que puedan mejorar su rendimiento academico.
+
+                    </p>
+                    <p class="titulo">¿Como lo haremos?</p>
+                <p>
+                    -Los alumnos realizaron un formulario para determinar a quién necesita el apoyo.
+- Se realizó una lista de los alumnos de cada grupo que necesitan los lentes. <br>
+-Contacto con una institución, que en este caso, es el DIF para que vengan a hacer los exámenes de vista.
+-Los alumnos tuvieron que entregar sus respectivos papeles. <br>
+    *CURP, Ine de tutor, acta de naciemiento. <br>
+- Se realiza un estudio socioeconómico para determinar qué tipo de descuento se le dará a cada alumno.
+    *Si se determina que necesita, se le dara el maximo apoyo posible. <br>
+    *Al contrario, en el caso de no necesitarlo, se le apoyara con la mitad. <br>
+- El alumno realizará una labor social para compensar el apoyo. <br>
+    *Se compensara con actividades propuestas por los docentes, tales como una visita al asilo, la recoleccion de tapas de botellas, o alguna otra actividad. <br>
+                </p>
+    <p class="titulo">¿Quien esta encargado?</p>
+     <p>el Maestro Nazario hernandez y la maestra adriana son los coordinadores de este proyecto</p>
+     <p class="titulo">¿Cómo ve la gente con estos problemas?</p>
+     <div class="image-container">
+        
+        <img src="../imagenes/pizarron.avif" width="250px" id="pizarra">
+        <div class="text-overlay">Normal</div>
+        
+      </div>
+            </div><br>  
+ 
+ 
+        </ul>
+    </nav>
+    <video id="videoFondo" autoplay muted loop>
+        <source src="../imagenes/5948574-uhd_3840_2160_30fps.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta video.
+    </video>
+</body>
+<script>
+    document.querySelector('.image-container').addEventListener('mouseover', function() {
+      document.querySelector('.text-overlay').textContent = 'Míopia';
+    });
+  
+    document.querySelector('.image-container').addEventListener('mouseout', function() {
+      document.querySelector('.text-overlay').textContent = 'Normal';
+    });
+  </script>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problematica</title>
+    
+    <link rel="stylesheet" href="font.css">
+</head>
+<body>
+  
+    <video id="videoFondo" autoplay muted loop>
+        <source src="imagenes/5948574-uhd_3840_2160_30fps.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta video.
+    </video>
+
+    <!--inicio del nav-->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">PAEC</a>
+        </div>
+        <ul class="nav-links">
+          
+           
+        </ul>
+    </nav>
+
+  
+    <!--inicio del carrusel-->
+    <div class="carousel">
+        <div class="carousel-slide">
+            <div class="carousel-item">
+                <img src="imagenes/1.png" alt="Imagen 1">
+                <div class="carousel-text">
+                    <h2>Lentes para todos</h2>
+                    <p>Consiste en dotar de lentes a alumnos con discapacidades.</p>
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/2.png" alt="Imagen 2">
+                <div class="carousel-text">
+                    <h2>Tapitas</h2>
+                     <p>Juntar tapitas para apoyar a los niños y personas con cáncer.</p>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/3.png" alt="Imagen 3">
+                <div class="carousel-text">
+                    <h2>Asilo</h2>
+                    <p>Visitar a personas en asilos para ayudarlas a estar de mejor ánimo.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+ <!--texto -->
+  <div class="overlay">
+   
+
+    <div class="overlay-content">
+           <div class="paec">
+        <h2>¿Qué es PAEC?</h2>
+        <p>PAEC (Proyecto AulaEscuela Comunidad) es una iniciativa orientada a generar un impacto positivo en la sociedad mediante la colaboración entre estudiantes, docentes y la comunidad. Actualmente, el proyecto se compone de tres subproyectos principales, cada uno enfocado en una causa específica: <br>
+            PAEC busca crear una comunidad comprometida con el bienestar social y el desarrollo de valores solidarios en los estudiantes, integrando la educación con la acción comunitaria.</p>
+           </div>
+
+         
+            
+          
+    </div>
+    
+   
+  
+    <div class="container">
+        <a href="proyectos/lentes.html" id="caja1" class="box">
+            <div class="content">
+                <div class="text-box">
+                    <p> Dotación de lentes a estudiantes con discapacidad visual.</p>
+                </div>
+                <div class="image-box">
+                    <img width="100px" src="imagenes/logo.jpg" alt="lentes">
+                </div>
+            </div>
+        </a>
+        <a href="#" id="caja2" class="box">
+            <div class="content">
+                <div class="text-box">
+                    <p>Recolección de tapitas para niños con cáncer.</p>
+                </div>
+                <div class="image-box">
+                    <img width="100px" src="imagenes/tapitas.jpg" alt="tapitas">
+                </div>
+            </div>
+        </a>
+        <a href="#" id="caja3" class="box">
+            <div class="content">
+                <div class="text-box">
+                    <p>Este proyecto busca brindar apoyo emocional a personas mayores en asilos a través de visitas. </p>
+                </div>
+                <div class="image-box">
+                    <img width="100px" src="imagenes/asilo.jpg" alt="asilo">
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <h2 id="titulo-casos">Integrantes:</h2>
+    <p>Quezada Juarez Josue Said <br> Velasco Hernandez Juan Angel <br>Ibarra valdivia Johan gael <br>BARRIENTOS MILLAN FERNANDA ELIZABETH
+    </p>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

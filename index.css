@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #090229;
+    font-family: lazy_dog;
+    font-weight: 300px;
+  
+
+}
+
+
+
+#videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+    filter: blur(5px);
+}
+
+
+   
+.navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #010c1e;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+/*fin del nav 
+*/ 
+/*inicio carrusel*/
+.carousel {
+    opacity: 90%;
+    position: relative;
+    max-width: 100%;
+    height: 50vh; 
+    margin: auto;
+    overflow: hidden;
+  
+    border-radius: 5px;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.carousel-item.active {
+    display: block; /* Solo muestra el slide activo */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La imagen cubrirá el área del contenedor */
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 150px;
+    left: 35%;
+    transform: translateX(-50%);
+    color: white;
+   
+    padding: 10px;
+    text-align: justify;
+    border-radius: 5px;
+    z-index: 2; /* Asegura que el texto esté sobre la imagen */
+    max-width: 90%; /* Asegura que el texto no se desborde */
+    width: auto;
+    box-sizing: border-box;
+    text-shadow: 
+        1px 1px 0px #000, /* Sombra abajo derecha */
+        -1px -1px 0px #000, /* Sombra arriba izquierda */
+        -1px 1px 0px #000, /* Sombra abajo izquierda */
+        1px -1px 0px #000; /* Sombra arriba derecha */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(12, 23, 126);
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.363);
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 2; /* Asegura que los botones estén sobre las imágenes */
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    
+}
+
+/*texto*/
+.overlay {
+  
+    color: rgb(0, 0, 0);
+    position:absolute;
+    display: flexbox;
+    top: 115%; 
+    left: 50%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%);
+    width: 90%; /* Ancho de la hoja */
+    max-width: 80%;
+    background-color: rgb(255, 240, 240); /* Fondo blanco */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra alrededor de la hoja */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    opacity: 95%;
+     
+}
+
+.overlay-content {
+    max-height: 90vh; /* Altura máxima en relación al viewport */
+    overflow-y: auto; /* Añade scroll si el contenido es demasiado largo */
+}
+
+.paec{
+    background-color: #b3b3b3;
+    border-radius: 10px;
+}
+
+
+/*cajas  */
+.container {
+  
+  
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    
+}
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hace que el color del texto sea el mismo que el de su contenedor */
+}
+
+a:hover {
+    color: inherit; /* Mantiene el color al pasar el cursor */
+}
+
+a:visited {
+    color: inherit; /* Mantiene el color para los enlaces visitados */
+}
+
+#test{
+    color: white;
+    border-radius: 15px;
+    width: 30%;
+    height: 35%;
+}
+#test a{
+ color: white;
+}
+   
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(13,120,255,1) 0%, rgba(6,4,73,1) 100%);
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 10px;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-box {
+    flex: 1;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-box {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    align-items: center;
+    width: 100px;
+    height: auto;
+    filter: blur(0px); 
+    opacity: 0.8; 
+    transition: opacity 0.3s, filter 0.3s;
+}
+
+.box:hover .image-box img {
+    filter: blur(0); 
+    opacity: 1; 
+}
+
+#caja1, #caja2, #caja3 {
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+    background-size: 200% 200%;
+    animation: animarGradiente 5s ease infinite;
+}
+
+@keyframes animarGradiente {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
